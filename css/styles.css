@@ -1,4 +1,4 @@
-/* 
+/*
 основной цвет заголовков  #212121;
 основной белый цвет, основной цвет фона #FFFFFF;
 основной цвет текста #757575;
@@ -8,7 +8,7 @@
 цвет logo-studio #000000;
 */
 
-:root {
+/* :root {
   --main-title-color: color #212121;
   --main-text-color: #757575;
   --primary-white-color: #ffffff;
@@ -17,7 +17,7 @@
   --hover-button: #188ce8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-duration: 250ms;
-}
+} */
 
 body {
   font-family: Roboto, Tahoma, sans-serif;
@@ -66,10 +66,7 @@ img {
 
 /* ----------------Лого---------------- */
 
-.logo,
-.footer-logo,
-.logo-black,
-.logo-white {
+.logo {
   font-family: 'Raleway', Tahoma, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -77,16 +74,16 @@ img {
   color: var(--accent-color);
 }
 
-.logo-black {
+.logo--black {
   color: #000000;
 }
-.logo-white {
+.logo--white {
   color: var(--primary-white-color);
 }
 
 /* -------------------Навигация-------------------- */
 
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -101,16 +98,16 @@ img {
   align-items: center;
 }
 
-.header-list {
+.menu-list {
   display: flex;
   margin-left: 93px;
 }
 
-.header-list .header-item:not(:last-child) {
+.menu-list .menu-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-link {
+.menu-list__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -124,11 +121,11 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
-.header-link.current {
+.menu-list__link.current {
   position: relative;
 }
 
-.header-link.current::after {
+.menu-list__link.current::after {
   content: '';
   position: absolute;
 
@@ -148,11 +145,11 @@ img {
   margin-left: auto;
 }
 
-.contact .contact-item:not(:last-child) {
+.contact .contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link {
+.contact__link {
   display: inline-flex;
   align-items: center;
   padding-top: 32px;
@@ -164,13 +161,13 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
-.header-link:hover,
-.header-link:focus {
+.menu-list__link:hover,
+.menu-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -178,13 +175,13 @@ img {
   color: var(--accent-color);
 }
 
-.icon {
+.contact__icon {
   margin-right: 10px;
   fill: var(--main-text-color);
 }
 
-.contact-item-icon:hover .icon,
-.contact-item-icone:focus .icon {
+.contact__item:hover .contact__icon,
+.contact__item:focus .contact__icon {
   fill: var(--accent-color);
 }
 
@@ -268,12 +265,12 @@ img {
   margin-left: -30px;
 }
 
-.features-list-item {
+.features-list__item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
 }
 
-.features-icon {
+.features-list__icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +283,7 @@ img {
   background-color: var(--secondary-bcg-color);
 }
 
-.features-title {
+.features-list__title {
   margin-bottom: 10px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -294,7 +291,7 @@ img {
   color: var(--main-title-color);
 }
 
-.features-text {
+.features-list__text {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -312,24 +309,24 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-bottom: 50px;
 }
 
-.work-list {
+.work {
   display: flex;
-  margin-top: 50px;
   margin-left: -30px;
 }
 
-.work-list-item {
+.work__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
 }
 
-.work-box {
+.work__box {
   position: relative;
 }
 
-.work-text {
+.work__text {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -352,15 +349,6 @@ img {
 .section-staff {
   padding: 94px 0;
   background-color: var(--secondary-bcg-color);
-}
-
-.section-staff-title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--main-title-color);
 }
 
 .staff-title {
@@ -964,9 +952,3 @@ img {
   align-items: center;
   margin: 0 auto;
 }
-
-/* .form-button {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-} */

@@ -20,39 +20,48 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
     <!-- -------------------Шапка сайта------------------- -->
     <header class="header">
-      <div class="container header-nav">
+      <div class="container header__nav">
         <nav class="site-nav">
-          <a class="logo link" href="./index.html">Web<span class="logo-black">Studio</span></a>
+          <a class="logo link" href="./index.html"
+            >Web<span class="logo logo--black">Studio</span>
+          </a>
 
           <!------------------ Навигация --------------------->
-          <ul class="header-list list">
-            <li class="header-item"><a class="header-link link" href="./index.html">Студия</a></li>
-            <li class="header-item">
-              <a class="header-link link current">Портфолио</a>
+          <ul class="menu-list list">
+            <li class="menu-list__item">
+              <a class="menu-list__link link" href="./index.html">Студия</a>
             </li>
-            <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
+            <li class="menu-list__item">
+              <a class="menu-list__link link current" href=""
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
-        <!--------------- Контакты ------------------->
+        <!-------------- Контакты -------------------->
 
         <ul class="contact list">
-          <li class="contact-item contact-item-icon">
-            <a href="mailto:info@devstudio.com" class="contact-link link"
-              ><svg class="icon" width="16" height="12">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link link"
+              ><svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="contact-item contact-item-icon">
-            <a href="tel:+380961111111" class="contact-link link">
-              <svg class="icon" width="10" height="16">
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link link">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11
             </a>
@@ -240,8 +249,8 @@
    <footer class="footer">
       <div class="container footer-cont">
         <div class="fotter-adr">
-          <a class="footer-logo link" href="/"
-            >Web<span class="logo-white">Studio</span></a
+          <a class="logo footer-logo link" href="/"
+            >Web<span class="logo--white">Studio</span></a
           >
 
           <address>
