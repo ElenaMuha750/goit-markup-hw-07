@@ -1,22 +1,23 @@
 @import "./utils/vars";
 @import "./base/reset";
 @import "./base/common";
+@import "./utils/hidden";
 
 @import "./components/container";
-@import "./utils/hidden";
 @import "./components/logo";
+@import "./components/button";
+@import "./components/section-title";
+@import "./components/footer-form";
+@import "./components/modal-window";
+@import "./components/modal-form";
+@import "./components/checkbox";
+@import "./components/portfolio-btn";
 
 @import "./layout/header";
 @import "./layout/hero";
-@import "./components/button";
 @import "./layout/features";
-@import "./components/section-title";
 @import "./layout/work-section";
 @import "./layout/staff-section";
 @import "./layout/clients";
 @import "./layout/footer";
-@import "./components/footer-form";
 @import "./layout/portfolio";
-@import "./components/modal-window";
-@import "./components/modal-form";
-@import "./components/checkbox";

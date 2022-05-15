@@ -60,21 +60,21 @@
   border-radius: 50%;
 
   transition: background-color var(--transition-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .staff-soc-icon {
   fill: #afb1b8;
   transition: fill var(--transition-duration) var(--timing-function);
-}
 
-.staff-soc-link:hover,
-.staff-soc-link:focus {
-  background-color: var(--accent-color);
-}
-
-.staff-soc-link:hover .staff-soc-icon,
-.staff-soc-link:focus .staff-soc-icon {
-  fill: var(--primary-white-color);
+  .staff-soc-link:hover &,
+  .staff-soc-link:focus & {
+    fill: var(--primary-white-color);
+  }
 }
 
 .staff-soc-item + .staff-soc-item {

@@ -19,10 +19,6 @@
   visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
-  transform: scale(0.1);
-}
-
 .modal {
   position: absolute;
   width: 528px;
@@ -35,6 +31,10 @@
 
   transform: scale(1);
   transition: transform var(--transition-duration) var(--timing-function);
+
+  .backdrop.is-hidden & {
+    transform: scale(0.1);
+  }
 }
 
 .modal-close-btn {
@@ -51,15 +51,15 @@
   border-radius: 50%;
   background: var(--primary-white-color);
   outline: none;
+
+  &:hover .close-icon,
+  &:focus .close-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .close-icon {
   transition: fill var(--transition-duration) var(--timing-function);
-}
-
-.modal-close-btn:hover .close-icon,
-.modal-close-btn:focus .close-icon {
-  fill: var(--accent-color);
 }
 
 .modal-title {

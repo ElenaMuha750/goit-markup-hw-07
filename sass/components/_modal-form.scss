@@ -26,27 +26,27 @@
   box-sizing: border-box;
   outline: none;
   transition: border var(--transition-duration) var(--timing-function);
-}
 
-.form-input:focus {
-  border-color: var(--accent-color);
-}
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.form-input:focus + .modal-icon {
-  fill: var(--accent-color);
+  &:focus + .modal-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .form-comment {
   outline: none;
   transition: border var(--transition-duration) var(--timing-function);
-}
 
-.form-comment:focus {
-  border-color: var(--accent-color);
-}
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.form-comment::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-icon {

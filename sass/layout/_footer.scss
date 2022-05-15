@@ -24,11 +24,11 @@
   color: var(--primary-white-color);
   font-style: normal;
   transition: color var(--transition-duration) var(--timing-function);
-}
 
-.footer-adress:hover,
-.footer-adress:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contact {
@@ -37,11 +37,11 @@
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   transition: color var(--transition-duration) var(--timing-function);
-}
 
-.footer-contact:hover,
-.footer-contact:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-social {
@@ -75,13 +75,13 @@
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background-color var(--transition-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-soc-icon {
   fill: var(--primary-white-color);
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
 }
