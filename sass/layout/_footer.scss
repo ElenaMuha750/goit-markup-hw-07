@@ -24,11 +24,6 @@
   color: var(--primary-white-color);
   font-style: normal;
   transition: color var(--transition-duration) var(--timing-function);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }
 
 .footer-contact {

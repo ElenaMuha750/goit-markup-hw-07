@@ -89,8 +89,8 @@
   margin-right: 10px;
   fill: var(--main-text-color);
 
-  .contact__item:hover &,
-  .contact__item:focus & {
+  .contact__link:hover &,
+  .contact__link:focus & {
     fill: var(--accent-color);
   }
 }
